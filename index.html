@@ -6,11 +6,11 @@
   <title>Barra Jirau Energia</title>
   <style>
     :root {
-      --stripe-green: #6ee7b7; /* verde mais fraco (claro) */
+      --stripe-green: #34d399; /* verde forte */
       --stripe-white: #ffffff; /* branco */
-      --stripe-size: 18px;     /* largura de cada listra */
-      --speed: 20s;            /* velocidade bem mais lenta */
-      --bar-height: 40px;      /* altura da barra */
+      --stripe-size: 20px;     /* largura de cada listra */
+      --speed: 40s;            /* velocidade mais lenta */
+      --bar-height: 60px;      /* altura da barra */
       --radius: 0;             /* sem arredondar para ocupar toda tela */
     }
 
@@ -49,9 +49,11 @@
       align-items: center;
       justify-content: center;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 24px; /* Tamanho da fonte aumentado */
       color: #000;
       text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+      padding: 0 20px; /* Adiciona um pouco de padding */
+      box-sizing: border-box;
     }
 
     @keyframes stripes {
@@ -75,7 +77,7 @@
 </head>
 <body>
   <main class="wrap">
-    <div class="bar">JIRAU ENERGIA</div>
+    <div class="bar"></div>
   </main>
 </body>
 </html>
